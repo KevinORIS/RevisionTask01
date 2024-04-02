@@ -28,6 +28,12 @@ package by.itstep.javatraining.revision.task;
 
 public class TaskX {
     public static int start(int seeker, int coin) {
-        return 0;
+    	if(seeker < 1 || coin < 1) {
+    		return -1;
+    	}
+    	if(coin % seeker == 0 || seeker == 1) {
+    		return 0;
+    	}
+        return seeker - (coin % seeker);
     }
 }
