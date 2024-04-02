@@ -26,6 +26,6 @@ package by.itstep.javatraining.revision.task;
 
 public class Task03 {
     public static int start(int number) {
-        return 0;
+        return Math.abs(number) % 100 / 10;
     }
 }
